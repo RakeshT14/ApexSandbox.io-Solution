@@ -1,7 +1,6 @@
 public Boolean isBirthday(Contact c) {
     //code here
-    if(c.Birthdate==Date.today()){
-        return true;
-    }
+    Date d=system.today();
+    if(c.Birthdate.day()==d.day() && c.Birthdate.month()==d.month()) return true;
     return false;
 }
